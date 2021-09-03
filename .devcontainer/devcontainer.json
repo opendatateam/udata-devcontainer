@@ -1,0 +1,11 @@
+{
+    "dockerComposeFile": "../docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "udata",
+	"extensions": [
+		"ms-python.python",
+        "octref.vetur"
+	],
+    "forwardPorts": [27017, 6379, 9200],
+    "postCreateCommand": "pip install -e udata && pip install -e udata-gouvfr && echo 'Setup is ready!'"
+}
