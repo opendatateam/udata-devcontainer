@@ -11,7 +11,7 @@ git clone git@github.com:etalab/udata-front.git
 
 Then you can reopen this directory as a dev container.
 
-Once you are inside the dev container, you can use `initialize.sh` to install assets for the first time.
+Once you are inside the dev container, you can use `bash initialize.sh` to install assets for the first time.
 
 ## Settings
 
