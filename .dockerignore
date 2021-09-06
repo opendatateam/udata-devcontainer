@@ -1,5 +1,6 @@
 udata/data
 udata/fs
+udata/instance
 udata/node_modules
 udata/build
 udata-front/node_modules

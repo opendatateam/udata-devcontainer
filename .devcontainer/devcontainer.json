@@ -6,6 +6,6 @@
 		"ms-python.python",
         "octref.vetur"
 	],
-    "forwardPorts": [27017, 6379, 9200],
+    "forwardPorts": [7000],
     "postCreateCommand": "pip install -e udata && pip install -e udata-front && echo 'Setup is ready!'"
 }
