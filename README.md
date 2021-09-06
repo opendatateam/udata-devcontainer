@@ -16,13 +16,12 @@ Once you are inside the dev container, you can use `bash initialize.sh` to insta
 ## Settings
 
 Don't forget to set `udata.cfg` accordingly.
-You should also modify the path to data.
 
-## Data and assets
-
-Data are expected to be located at `udata/data`.
-
-*TODO*
+You should add the following settings in  your `udata.cfg`:
+```
+MONGODB_HOST = 'mongodb://db:27017/udata'
+ELASTICSEARCH_URL = 'search:9200'
+```
 
 ## Develop
 
@@ -31,7 +30,38 @@ If you need to develop on frontend assets you can go to udata or udata-front and
 
 You can go at `localhost:7000/` `dev.local:7000/`.
 
+## Content / users
+
+Data are expected to be located at `udata/data`.
+
+### Create fixtures
+
+```
+docker exec -it udata-docker-dev-env_udata_1 generate-fixtures
+```
+
+### Create an admin
+
+```
+docker exec -it udata-docker-dev-env_udata_1 udata user create
+docker exec -it udata-docker-dev-env_udata_1 udata user set-admin <email>
+```
+
+### Populate the homepage
+
+- log as admin
+- go to http://localhost:7000/fr/admin/editorial/
+- pick datasets and reusess
+
+## Indexing (search engines and list)
+
+```
+docker exec -it udata-docker-dev-env_udata_1 udata search index
+# it is possible to filter by model
+docker exec -it udata-docker-dev-env_udata_1 udata search index Dataset
+```
+
 ## Troubleshooting
 
-*All pages return 404*: Pay attention that you use the correct port number (7000).
+*All pages return 404*: Pay attention that you use the correct port number (7000) and the correct `SERVER_NAME` (set in `udata.cfg`).
 *Permission issues*: WIP - you may need to manually change permissions on linux.
