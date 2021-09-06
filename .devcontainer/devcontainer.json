@@ -7,5 +7,5 @@
         "octref.vetur"
 	],
     "forwardPorts": [27017, 6379, 9200],
-    "postCreateCommand": "pip install -e udata && pip install -e udata-gouvfr && echo 'Setup is ready!'"
+    "postCreateCommand": "pip install -e udata && pip install -e udata-front && echo 'Setup is ready!'"
 }

@@ -6,10 +6,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 ARG NODE_VERSION="14"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
-RUN mkdir -p udata/requirements udata-gouvfr/requirements 
+RUN mkdir -p udata/requirements udata-front/requirements 
 COPY udata/requirements /tmp/udata/requirements
-COPY udata-gouvfr/requirements /tmp/udata-gouvfr/requirements
+COPY udata-front/requirements /tmp/udata-front/requirements
 
 RUN pip install -r /tmp/udata/requirements/all.pip \
-                -r /tmp/udata-gouvfr/requirements/install.pip \
-                -r /tmp/udata-gouvfr/requirements/test.pip
+                -r /tmp/udata-front/requirements/install.pip \
+                -r /tmp/udata-front/requirements/test.pip

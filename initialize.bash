@@ -1,6 +1,6 @@
 . /usr/local/share/nvm/nvm.sh
 
-for val in udata udata-gouvfr; do
+for val in udata udata-front; do
     cd $val
     nvm install
     nvm use

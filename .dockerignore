@@ -2,5 +2,5 @@ udata/data
 udata/fs
 udata/node_modules
 udata/build
-udata-gouvfr/node_modules
-udata-gouvfr/build
+udata-front/node_modules
+udata-front/build
