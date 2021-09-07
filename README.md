@@ -13,7 +13,7 @@ Then you can reopen this directory as a dev container.
 
 Once you are inside the dev container, you can use `bash initialize.sh` to install assets for the first time.
 
-## Settings
+## Settings
 
 Don't forget to set `udata.cfg` accordingly.
 
