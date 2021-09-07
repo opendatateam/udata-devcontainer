@@ -1,0 +1,8 @@
+{
+    // The following will hide the assets and data files
+    "files.exclude": {
+        "udata/fs": true,
+        "udata/instance": true,
+        "udata/data": true
+    }
+}
