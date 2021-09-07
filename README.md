@@ -2,7 +2,8 @@
 
 You need VSCode [Remote Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension (not available for vscodium).
 
-## Getting started
+## Getting Started
+
 You need to clone [udata-front](https://github.com/etalab/udata-front) and [udata](https://github.com/opendatateam/udata) inside this repository:
 ```
 git clone git@github.com:opendatateam/udata.git
