@@ -4,10 +4,10 @@ You need VSCode [Remote Containers](https://marketplace.visualstudio.com/items?i
 
 ## Getting Started
 
-You need to clone [udata-front](https://github.com/etalab/udata-front) and [udata](https://github.com/opendatateam/udata) inside this repository:
+You need to clone [udata-front](https://github.com/datagouv/udata-front) and [udata](https://github.com/opendatateam/udata) inside this repository:
 ```
 git clone git@github.com:opendatateam/udata.git
-git clone git@github.com:etalab/udata-front.git
+git clone git@github.com:datagouv/udata-front.git
 ```
 
 Then you can reopen this directory as a dev container.
